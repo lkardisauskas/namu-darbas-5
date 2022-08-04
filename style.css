@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background: black;
+}
+
+
+.transition {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+section .ball {
+    height: 100px;
+    width: 100px;
+    color: orange;
+    transition: 1s;    
+   
+}
+
+.transition:hover .ball {
+    transform: translateX(400px) rotate(260deg);
+}
+
+
+.animation {
+    height: 100px;
+    padding-top: 20px ;
+}
+
+.animation .animacija {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.animacija {
+    animation: animacija 5s infinite;
+}
+
+@keyframes animacija {
+    0% {
+        background: black;
+    }
+
+    10% {
+        background: grey;
+        transform: rotate(36deg) scale(0.1);
+        border-radius: 5px;
+    }
+    20% {
+        background: rgb(139, 124, 124);
+        transform: rotate(72deg) scale(0.2);
+        border-radius: 10px;
+    }
+    30% {
+        background: rgb(134, 109, 109);
+        transform: rotate(108deg) scale(0.3);
+        border-radius: 15px;
+    }
+    40% {
+        background: rgb(146, 106, 106);
+        transform: rotate(144deg) scale(0.4);
+        border-radius: 20px;
+    }
+    50% {
+        background: rgb(151, 92, 92);
+        transform: rotate(180deg) scale(0.5);
+        border-radius: 25px;
+    }
+    60% {
+        background: rgb(148, 73, 73);
+        transform: rotate(216deg) scale(0.6);
+        border-radius: 30px;
+    }
+    70% {
+        background: rgb(145, 58, 58);
+        transform: rotate(252deg) scale(0.7);
+        border-radius: 35px;
+    }
+    80% {
+        background: rgb(155, 45, 45);
+        transform: rotate(288deg) scale(0.8);
+        border-radius: 35px;
+    }
+    90% {
+        background: rgb(143, 27, 27);
+        transform: rotate(324deg) scale(0.9);
+        border-radius: 40px;
+    }
+    100% {
+        background: rgb(175, 2, 2);
+        transform: rotate(360deg) scale(1.2);
+        border-radius: 45px;
+    }
+
+
+}
